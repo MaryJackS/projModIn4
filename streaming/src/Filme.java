@@ -1,19 +1,36 @@
-public class Filme extends Midia{
+
+
+public class Filme extends Midia {
     private double duracao;
-    private String tipo_curto;
-    private String tipo_longa;
+    private String tipo;
     private String[] elenco;
     private String diretor;
     private String produtor;
 
-    public Filme(double duracao, String tipo_curto, String tipo_longa, String[] elenco, String diretor, String produtor){
+
+    public Filme(
+            double duracao,
+            String tipo,
+            String[] elenco,
+            String diretor,
+            String produtor,
+            String titulo,
+            String ano,
+            String genero)
+    {
+
+        super(
+                titulo,
+                ano,
+                genero);
+
         this.duracao = duracao;
-        this.tipo_curto = tipo_curto;
-        this.tipo_longa = tipo_longa;
+        this.tipo = tipo;
         this.elenco = elenco;
         this.diretor = diretor;
         this.produtor = produtor;
     }
+
 
     public double getDuracao() {
         return duracao;
@@ -23,20 +40,17 @@ public class Filme extends Midia{
         this.duracao = duracao;
     }
 
-    public String getTipo_curto() {
-        return tipo_curto;
+    public String getTipo() {
+        if (duracao < 60){
+            System.out.println(" Curta metragem ");
+        }else {
+            System.out.println(" Longa duração ");
+        }
+        return tipo;
     }
 
-    public void setTipo_curto(String tipo_curto) {
-        this.tipo_curto = tipo_curto;
-    }
-
-    public String getTipo_longa() {
-        return tipo_longa;
-    }
-
-    public void setTipo_longa(String tipo_longa) {
-        this.tipo_longa = tipo_longa;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String[] getElenco() {
