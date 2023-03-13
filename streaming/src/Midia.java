@@ -1,10 +1,12 @@
 
 
 public class Midia {
+    //Atributos
     private String titulo;
     private String ano;
     private String genero;
 
+    // Construtor
     public Midia(
             String titulo,
             String ano,
@@ -16,6 +18,7 @@ public class Midia {
         this.genero = genero;
     }
 
+    // Setters e Getters
     public String getTitulo(){
         return titulo;
     }

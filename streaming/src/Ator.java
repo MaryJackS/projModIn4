@@ -1,11 +1,12 @@
-import java.time.LocalDate;
+
 
 public class Ator extends Artista{
+//    atributos
     private String formacao;
-
+//    construtor
     public Ator(String formacao,
                 String nome,
-                LocalDate dataDeNascimento,
+                String dataDeNascimento,
                 String premiacao,
                 String genero)
     {
@@ -16,7 +17,7 @@ public class Ator extends Artista{
                 genero);
         this.formacao = formacao;
     }
-
+//     Setters e Getters
     public String getFormacao() {
         return formacao;
     }

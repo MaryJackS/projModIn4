@@ -1,13 +1,15 @@
 
 
 public class Filme extends Midia {
+
+//    Atributos
     private double duracao;
     private String tipo;
-    private String[] elenco;
+    private String[] elenco = new String[3];
     private String diretor;
     private String produtor;
 
-
+//  Construtor
     public Filme(
             double duracao,
             String tipo,
@@ -31,7 +33,7 @@ public class Filme extends Midia {
         this.produtor = produtor;
     }
 
-
+// Setters e Getters
     public double getDuracao() {
         return duracao;
     }
@@ -44,7 +46,7 @@ public class Filme extends Midia {
         if (duracao < 60){
             System.out.println(" Curta metragem ");
         }else {
-            System.out.println(" Longa duração ");
+            System.out.println(" Longa metragem ");
         }
         return tipo;
     }

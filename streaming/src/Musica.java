@@ -1,10 +1,12 @@
 
 
 public class Musica extends Midia {
+    //Atributos
     private double duracao;
     private int notas;
     private String artista;
 
+    // Construtor
     public Musica(
             double duracao,
             int notas,
@@ -25,6 +27,7 @@ public class Musica extends Midia {
         this.artista = artista;
     }
 
+    // Setters e Getters
     public double getDuracao() {
         return duracao;
     }

@@ -1,16 +1,16 @@
 import com.sun.source.tree.UsesTree;
 
-import java.time.LocalDate;
-
 public class Artista {
+//    atributos
     private String nome;
-    private LocalDate dataDeNascimento;
+    private String dataDeNascimento;
     private String premiacao;
     private String genero;
 
+//   construtor
     public Artista(
             String nome,
-            LocalDate dataDeNascimento,
+            String dataDeNascimento,
             String premiacao,
             String genero)
     {
@@ -27,11 +27,11 @@ public class Artista {
         this.nome = nome;
     }
 
-    public LocalDate getDataDeNascimento() {
+    public String getDataDeNascimento() {
         return dataDeNascimento;
     }
 
-    public void setDataDeNascimento(LocalDate dataDeNascimento) {
+    public void setDataDeNascimento(String dataDeNascimento) {
         this.dataDeNascimento = dataDeNascimento;
     }
 
